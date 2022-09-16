@@ -1,23 +1,21 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 
+import "./App.scss";
+import Navbar from "./componenets/navbar/navbar";
+import Landing from "./componenets/landing/landing";
+import Contact from "./componenets/contact/contact";
+// import Footer from "./componenets/footer/footer";
+import Projects from "./componenets/projects/projects";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/abdelkader-draou/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Coming Soon
-        </a>
-      </header>
+      <Navbar />
+      <div className="sections" id="sections">
+        <Landing />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }
-
 export default App;

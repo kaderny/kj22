@@ -1,0 +1,28 @@
+@import "./global.scss";
+.App {
+ 
+  height: 100vh;
+  .sections { 
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 75px);
+    top: 70px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; //to make scrolling smoother
+    //to hide scroll bar
+    scrollbar-width: none; //firefox
+    //other browsers to not display scroll bar
+      &::-webkit-scrollbar {
+          display: none;
+        }
+
+                //this to targer all component inside the sections 'div 
+    > *{
+      border: 1px solid $mainColor;
+      height: calc(100vh - 70px);
+      width: 100%;
+      scroll-snap-align:start; 
+    }
+  }
+}
