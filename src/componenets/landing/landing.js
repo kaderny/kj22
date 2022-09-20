@@ -21,7 +21,9 @@ function landing() {
         </div>
       </div>
       <div className="left">
-        <img className="me" src={portrait} alt="me"></img>
+        <div className="myImage">
+          <img className="me" src={portrait} alt="me"></img>
+        </div>
       </div>
     </div>
   );

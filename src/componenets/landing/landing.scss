@@ -37,13 +37,17 @@
     flex: 50%;
     // background-color: azure;
   }
-  .me {
+  .myImage {
     display: flex;
-    position: absolute;
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
-    // border: 2px solid black;
-    height: 80vh;
+    width: 50%;
+    border: 2px solid red;
+    .me {
+      position: absolute;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      height: 80vh;
+    }
   }
 }
