@@ -1,4 +1,49 @@
 @import "./../../global.scss";
 .landing {
-  background-color: #faebe0;
+  background-color: white;
+  display: flex;
+
+  .right {
+    flex: 50%;
+    // background-color: lightblue;
+    padding-left: 50px;
+    .landingPresentation {
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 9rem;
+      color: grey;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    .grey {
+      color: grey;
+    }
+    .SeeMywork {
+      border-radius: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      background-color: white;
+      color: grey;
+      font-size: 2rem;
+      margin: 5% 5%;
+    }
+  }
+  .left {
+    flex: 50%;
+    // background-color: azure;
+  }
+  .me {
+    display: flex;
+    position: absolute;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid black;
+    height: 80vh;
+  }
 }

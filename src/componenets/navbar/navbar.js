@@ -7,7 +7,9 @@ function navbar() {
 
   return (
     <nav className="nav">
-      <h3 className="logo"> Abdelkader Draou</h3>
+      <a className="logo" href="#landing">
+        Abdelkader Draou
+      </a>
 
       <ul
         className={isMobile ? "navLinksMobile" : "navLinksDesktop"}
