@@ -15,9 +15,6 @@ function landing() {
             and I'm a <span className="grey">Web Developer </span>
           </h2>
           <button className="SeeMywork"> My Work</button>
-          <button type="button" class="btn btn-primary">
-            Primary
-          </button>
         </div>
       </div>
       <div className="left">

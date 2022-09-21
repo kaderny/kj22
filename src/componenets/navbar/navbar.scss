@@ -11,7 +11,7 @@
   justify-content: space-between;
   width: 100vw;
   height: 70px;
-  background: white;
+  background: #1a1b41;
   overflow: hidden;
   z-index: 2;
 
@@ -21,7 +21,7 @@
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: #f1ffe7;
   }
 
   .hamburger {
@@ -39,11 +39,11 @@
     cursor: pointer;
     a {
       text-decoration: none;
-      color: black;
+      color: white;
     }
     a:hover {
-      background: $mainColor;
-      border-bottom: 2px solid green;
+      color: #baff29;
+      // border-bottom: 2px solid green;
     }
   }
 }
@@ -53,11 +53,16 @@
     .hamburger {
       display: block;
       position: absolute;
-      top: 5px;
-      right: 5px;
-      color: black;
-      font-size: 20px;
+      top: 15px;
+      right: 15px;
+      background-color: #1a1b41;
+      font-size: 30px;
+      color: #f0efec;
       border-color: transparent;
+      justify-content: center;
+      :hover {
+        color: #baff29;
+      }
     }
     .logo {
       display: flex;
@@ -75,8 +80,8 @@
       height: 50vh;
       width: 100%;
       // list-style-type: none;
-      background-color: #f0efec;
-      transition: all 10s ease-out;
+      background-color: #1a1b41;
+      transition: all 1s ease-out;
       justify-items: center;
       justify-content: space-evenly;
 
@@ -84,9 +89,11 @@
         width: 100%;
         text-align: center;
         transition: all 0.5s ease;
+        list-style: none;
+        padding: 35px 15px;
 
         a {
-          color: black;
+          color: white;
           text-decoration: none;
           font-size: 2rem;
           justify-content: space-evenly;

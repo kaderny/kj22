@@ -10,16 +10,17 @@
     .landingPresentation {
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
     h1 {
-      font-size: 9rem;
-      color: grey;
+      font-size: 6rem;
+      color: #baff29;
     }
     h2 {
       font-size: 3rem;
     }
     .grey {
-      color: grey;
+      color: #1a1b41;
     }
     .SeeMywork {
       border-radius: 10%;
@@ -27,8 +28,7 @@
       align-items: center;
       justify-content: center;
       width: 50%;
-      background-color: white;
-      color: grey;
+
       font-size: 2rem;
       margin: 5% 5%;
     }
@@ -36,18 +36,28 @@
   .left {
     flex: 50%;
     // background-color: azure;
+    .myImage {
+      display: flex;
+      width: 50%;
+      max-width: 200px;
+      // border: 2px solid red;
+      .me {
+        position: absolute;
+      }
+    }
   }
-  .myImage {
-    display: flex;
-    width: 50%;
-    border: 2px solid red;
-    .me {
-      position: absolute;
-      width: 90%;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid black;
-      height: 80vh;
+}
+@media (max-width: 990px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+      .myImage .me {
+        align-items: center;
+        border: 2px solid black;
+      }
     }
   }
 }
