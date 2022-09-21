@@ -15,6 +15,15 @@ function landing() {
             and I'm a <span className="grey">Web Developer </span>
           </h2>
           <button className="SeeMywork"> My Work</button>
+          <div className="contactIcons">
+            <a
+              href="https://www.linkedin.com/in/abdelkader-draou/"
+              class="fa fa-linkedin-square"
+              aria-hidden="true"
+            ></a>
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
       <div className="left">
