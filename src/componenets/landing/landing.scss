@@ -7,11 +7,13 @@
   .right {
     flex: 50%;
     padding-left: 50px;
+
     .landingPresentation {
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 0;
+      margin-top: 3rem;
+      gap: 2rem;
     }
     h1 {
       font-size: calc(2rem + 2vw);
@@ -31,8 +33,19 @@
     }
     .SeeMywork {
       padding: 8px 12px;
+      border-radius: 5px;
       font-size: calc(1rem+ 0.75vw);
       margin: 0;
+      background-color: white;
+      color: #1a1b41;
+      border-color: #baff29;
+      margin-top: 1rem;
+      line-height: 1.2;
+      &:hover {
+        background-color: rgb(186, 255, 41);
+        color: #1a1b41;
+        border-color: hsl(188, 43%, 18%);
+      }
     }
     .contactIcons {
       width: 25%;
