@@ -20,7 +20,9 @@ function landing() {
               href="https://www.linkedin.com/in/abdelkader-draou/"
               class="fa fa-linkedin-square"
               aria-hidden="true"
-            ></a>
+            >
+              {" "}
+            </a>
             <i class="fa fa-github-square" aria-hidden="true"></i>
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
           </div>

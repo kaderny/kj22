@@ -3,35 +3,43 @@
   background-color: white;
   display: flex;
   font-family: "Cairo", sans-serif;
+  flex-wrap: wrap;
   .right {
     flex: 50%;
-    // background-color: lightblue;
     padding-left: 50px;
     .landingPresentation {
       justify-content: center;
       align-items: center;
       width: 100%;
+      margin: 0;
     }
     h1 {
-      font-size: 5rem;
+      font-size: calc(2rem + 2vw);
       color: #baff29;
+      margin: 0;
+      line-height: 1.2;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: calc(1rem + 1.5vw);
+      margin: 0;
+      // border: 2px solid red;
+      padding: 0;
+      line-height: 1.2;
     }
     .grey {
       color: #1a1b41;
     }
     .SeeMywork {
       padding: 8px 12px;
-      font-size: 2rem;
+      font-size: calc(1rem+ 0.75vw);
+      margin: 0;
     }
     .contactIcons {
       width: 25%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 36px;
+      font-size: calc(1rem + 1vw);
       padding-top: 50px;
     }
   }
@@ -40,11 +48,14 @@
     // background-color: azure;
     .myImage {
       display: flex;
+      flex-direction: column;
       width: 50%;
-      max-width: 200px;
-      // border: 2px solid red;
+      max-width: 150px;
+      height: auto; // border: 2px solid red;
       .me {
+        flex-direction: column;
         position: absolute;
+        height: auto;
       }
     }
   }
@@ -56,9 +67,15 @@
     justify-content: center;
 
     .left {
-      .myImage .me {
+      .myImage {
+        // border: 2px solid red;
+        height: 500px;
         align-items: center;
-        border: 2px solid black;
+        .me {
+          align-items: center;
+          // border: 2px solid black;
+          overflow-y: hidden;
+        }
       }
     }
   }
