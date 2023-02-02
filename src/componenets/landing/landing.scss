@@ -7,31 +7,35 @@
   .right {
     flex: 50%;
     padding-left: 50px;
-
     .landingPresentation {
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-top: 3rem;
+      margin-top: 2rem;
       gap: 2rem;
     }
     h1 {
-      font-size: calc(2rem + 2vw);
-      color: #baff29;
+      font-size: calc(6rem + 1vw);
+      color: #ddbeaa;
       margin: 0;
       line-height: 1.2;
+      font-weight: 600;
+      padding: 0;
     }
     h2 {
-      font-size: calc(1rem + 1.5vw);
-      margin: 0;
-      // border: 2px solid red;
-      padding: 0;
+      font-size: calc(3rem + 1vw);
       line-height: 1.2;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
     }
+
     .grey {
-      color: #1a1b41;
+      color: #469597;
     }
+
     .SeeMywork {
+      left: 35rem;
       padding: 8px 12px;
       border-radius: 5px;
       font-size: calc(1rem+ 0.75vw);
@@ -54,20 +58,23 @@
       justify-content: space-between;
       font-size: calc(1rem + 1vw);
       padding-top: 50px;
+      gap: 1rem;
+      .fa-linkedin-square {
+        color: #0a66c2;
+      }
+
+      .fa-whatsapp {
+        color: #25d366;
+      }
     }
   }
   .left {
     flex: 50%;
+    display: flex;
     // background-color: azure;
     .myImage {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      max-width: 150px;
       height: auto; // border: 2px solid red;
       .me {
-        flex-direction: column;
-        position: absolute;
         height: auto;
       }
     }
@@ -75,19 +82,18 @@
 }
 @media (max-width: 990px) {
   .landing {
+    display: flex;
+    height: 64rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    .right {
+      flex-direction: column;
+    }
     .left {
+      flex-direction: column;
       .myImage {
-        // border: 2px solid red;
-        height: 500px;
-        align-items: center;
         .me {
-          align-items: center;
-          // border: 2px solid black;
-          overflow-y: hidden;
         }
       }
     }

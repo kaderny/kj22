@@ -15,7 +15,6 @@ function landing() {
           <h2>
             and I'm a <span className="grey">Web Developer </span>
           </h2>
-          <button className="SeeMywork">My Work</button>
 
           <div className="contactIcons">
             <a
@@ -25,9 +24,14 @@ function landing() {
             >
               {" "}
             </a>
-            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <i
+              class="fa fa-github-square"
+              aria-hidden="true"
+              style={{ color: "black" }}
+            ></i>
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
           </div>
+          <button className="SeeMywork">My Work</button>
         </div>
       </div>
       <div className="left">

@@ -1,4 +1,13 @@
 @import "./../../global.scss";
 .projects {
-  background-color: white;
+  background-color: #e5e3e4;
+}
+@media (max-width: 990px) {
+  .projects {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
 }
