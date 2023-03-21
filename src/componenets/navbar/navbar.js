@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { UseState } from "react";
 import "./navbar.scss";
 
 function navbar() {
   const handleClick = () => setisMobile(!isMobile);
-  const [isMobile, setisMobile] = useState(false);
+  const [isMobile, setisMobile] = UseState(false);
 
   return (
     <nav className="nav">
