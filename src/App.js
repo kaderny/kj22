@@ -10,7 +10,7 @@ import Coming from "./componenets/coming soon/coming";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="sections" id="sections">
         <Coming />
         {/* <Landing />
