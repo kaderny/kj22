@@ -38,7 +38,7 @@
       left: 35rem;
       padding: 8px 12px;
       border-radius: 5px;
-      font-size: calc(1rem+ 0.75vw);
+      font-size: calc(1rem + 0.75vw);
       margin: 0;
       background-color: white;
       color: #1a1b41;
@@ -73,27 +73,33 @@
     display: flex;
     // background-color: azure;
     .myImage {
-      height: auto; // border: 2px solid red;
-      .me {
-        height: auto;
-      }
+      height: auto;
+      width: 50%;
+      //height: auto; // border: 2px solid red;
+      // .me {
+      //   height: auto;
+      // }
     }
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 700px) {
   .landing {
     display: flex;
     height: 64rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     .right {
       flex-direction: column;
     }
     .left {
       flex-direction: column;
+      float: none;
+      clear: both;
       .myImage {
         .me {
+          width: 75%;
         }
       }
     }
